@@ -1,7 +1,7 @@
-import React, { useContext, useReducer, useEffect } from "react";
+import React, { useReducer, useEffect } from "react";
 import reducer from "./reducer";
 import { LOADING, GET_STORIES, REMOVE_STORIES, SEARCH, PAGES } from "./data";
-import { type } from "@testing-library/user-event/dist/type";
+// import { type } from "@testing-library/user-event/dist/type";
 const NewsContext = React.createContext();
 
 const NewsProvider = ({ children }) => {

@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { LOADING, GET_STORIES, REMOVE_STORIES, SEARCH, PAGES } from "./data";
 
 const reducer = (state, action) => {
@@ -6,7 +6,7 @@ const reducer = (state, action) => {
   switch (action.type) {
     case LOADING:
       return { ...state, loading: true };
-      break;
+    // break;
     case GET_STORIES:
       // here we will change whatever is there in initial part
       return {
@@ -28,7 +28,7 @@ const reducer = (state, action) => {
         page: 0,
       };
     case PAGES:
-      if (action.payload == "increase") {
+      if (action.payload === "increase") {
         let nextPage = state.page + 1;
         if (nextPage > state.nbPages - 1) {
           nextPage = 0;

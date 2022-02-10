@@ -1,4 +1,4 @@
-import { getByTitle } from "@testing-library/react";
+// import { getByTitle } from "@testing-library/react";
 import React, { useContext } from "react";
 import { NewsContext } from "../context";
 import Loading from "./Loading";
@@ -33,7 +33,7 @@ const News = () => {
                       </Span>
 
                       <Buttons>
-                        <a href={url} target="_blank">
+                        <a href={url} target="_blank" rel="noreferrer">
                           <Button variant="contained" color="primary">
                             Read
                           </Button>

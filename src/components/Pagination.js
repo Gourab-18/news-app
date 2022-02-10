@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { Button } from "@material-ui/core";
 
 const Pagination = () => {
-  const { API, loading, changePage, page, nbPages } = useContext(NewsContext);
+  const { loading, changePage, page, nbPages } = useContext(NewsContext);
 
   return (
     <>

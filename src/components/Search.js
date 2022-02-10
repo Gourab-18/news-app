@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { NewsContext } from "../context";
 import styled from "styled-components";
 const Search = () => {
-  const { API, loading, query, searchNews } = useContext(NewsContext);
+  const { query, searchNews } = useContext(NewsContext);
   const handleSubmit = (e) => {
     e.preventDefault();
   };
